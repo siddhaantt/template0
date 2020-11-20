@@ -1,0 +1,282 @@
+/*Global Styling*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4,
+h5 {
+  font-size: 2.5rem;
+}
+
+a,
+li,
+input,
+label,
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/*Navigation Bar Styling*/
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+nav {
+  display: flex;
+  width: 90%;
+  min-height: 10vh;
+  color: white;
+  margin: auto;
+  align-items: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: 400;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Intro Styling*/
+
+#intro {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("./img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+#intro h3 {
+  padding: 5rem;
+  font-weight: normal;
+}
+
+/*Section 2 Styling*/
+#locations {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("./img/new-york-page.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+}
+
+.locations-head h3 {
+  padding: 4rem 0rem;
+  font-weight: normal;
+}
+
+/*Benefits Section Styling*/
+
+.benefits-header {
+  background: #343c44;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30vh;
+  padding: 3rem;
+}
+
+.benefits-header h3 {
+  padding: 1rem;
+  font-weight: normal;
+}
+
+/*Card Section Styling*/
+
+.cards-icon {
+  background: #27394e;
+}
+.cards {
+  min-height: 70vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  margin: 2rem 5rem;
+  min-height: 40vh;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+.cards h4,
+p {
+  padding: 1rem;
+  line-height: 1.8;
+}
+
+/*Contact Section Styling*/
+
+#contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(./img/contact-mountain.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.form-wrappper {
+  background: rgba(19, 28, 39, 0.8);
+  border-radius: 2rem;
+  width: 60%;
+}
+
+.form-header {
+  text-align: center;
+  padding: 4rem;
+}
+
+.name-form,
+.email-form,
+.subject-form,
+.message-form,
+.textarea-form {
+  padding: 1rem;
+  text-align: center;
+}
+.form-wrappper label {
+  margin: 0rem 3rem;
+}
+
+.form-wrappper input,
+textarea {
+  padding: 1rem 3rem;
+  width: 50%;
+}
+.form-wrappper button {
+  width: 100%;
+  margin-top: 8rem;
+  padding: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+/*Footer Section Styling*/
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+.footer-wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 10vh;
+  align-items: center;
+}
+footer h1 {
+  flex: 1 1 40rem;
+}
+.footer-wrapper ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*Media Queries */
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .form-wrappper {
+    width: 60%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+}
